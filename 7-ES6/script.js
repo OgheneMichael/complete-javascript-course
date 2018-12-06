@@ -15,6 +15,7 @@ console.log(name6);
 
 */
 
+/*
 // ES5 ––– Function scoped
 function driversLicense5(passedTest) {
 
@@ -54,3 +55,26 @@ for (var i = 0; i < 5; i++) {
 }
 
 console.log(i);
+*/
+
+
+//////////////////////////////
+// Lecture: Blocks and IIFEs
+
+// ES6;
+{
+  const a = 1;
+  let b = 2;
+  var c = 3;
+}
+
+// console.log(a + b);
+console.log(c);
+
+// ES5
+(function() {
+
+  var c = 3;
+})();
+
+// console.log(c);
