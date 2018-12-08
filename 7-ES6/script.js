@@ -135,7 +135,7 @@ console.log(ages6);
 
 ////////////////////////////////
 // Lecture: Arrow functions 2
-
+/*
 // ES5
 var box5 = {
   color: 'green',
@@ -164,19 +164,19 @@ const box6 = {
 }
 box6.clickMe();
 
-/*
-const box66 = {
-  color: 'green',
-  position: 1,
-  clickMe: () => {
-    document.querySelector('.green').addEventListener('click', () => {
-      var str = 'This is box number ' + this.position + ' and it is ' + this.color;
-      alert(str);
-    })
-  }
-}
-box66.clickMe();
-*/
+
+// const box66 = {
+//   color: 'green',
+//   position: 1,
+//   clickMe: () => {
+//     document.querySelector('.green').addEventListener('click', () => {
+//       var str = 'This is box number ' + this.position + ' and it is ' + this.color;
+//       alert(str);
+//     })
+//   }
+// }
+// box66.clickMe();
+
 
 
 
@@ -206,3 +206,37 @@ Person.prototype.myFriends6 = function(friends) {
 // var friends = ['Bob', 'Jane', 'Mark'];
 
 new Person('Michael').myFriends6(friends);
+*/
+
+////////////////////////////////
+// Lecture: Destructuring
+
+// ES5
+
+var john = ['John', 26];
+// var name = john[0];
+// var age = john[1];
+
+// ES6
+const [name, age] = ['John', 26];
+console.log(name);
+console.log(age);
+
+const obj = {
+  firstName: 'John',
+  lastName: 'Smith'
+}
+
+const {
+  firstName,
+  lastName
+} = obj;
+console.log(firstName);
+console.log(lastName);
+
+const {
+  firstName: a,
+  lastName: b
+} = obj;
+console.log(a);
+console.log(b);
