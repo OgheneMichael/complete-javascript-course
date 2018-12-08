@@ -392,6 +392,8 @@ isFullAge6(16, 1990, 1999, 1965, 2016, 1987);
 ////////////////////////////////
 // Lecture: Default parameters
 
+/*
+// ES5
 function SmithPerson(firstName, yearOfBirth, lastName, nationality) {
 
   lastName === undefined ? lastName = 'Smith' : lastName = lastName;
@@ -402,6 +404,13 @@ function SmithPerson(firstName, yearOfBirth, lastName, nationality) {
   this.nationality = nationality;
   this.yearOfBirth = yearOfBirth;
 }
+*/
 
+function SmithPerson(firstName, yearOfBirth, lastName = 'Smith', nationality = 'american') {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.nationality = nationality;
+  this.yearOfBirth = yearOfBirth;
+}
 var john = new SmithPerson('John', 1990);
 var emily = new SmithPerson('Emily', 1983, 'Diaz', 'spanish');
