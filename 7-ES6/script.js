@@ -210,9 +210,8 @@ new Person('Michael').myFriends6(friends);
 
 ////////////////////////////////
 // Lecture: Destructuring
-
+/*
 // ES5
-
 var john = ['John', 26];
 // var name = john[0];
 // var age = john[1];
@@ -252,3 +251,22 @@ function calcAgeRetirement(year) {
 const [age2, retirement] = calcAgeRetirement(1990);
 console.log(age2);
 console.log(retirement);
+*/
+
+
+
+////////////////////////////////
+// Lecture: Arrays
+
+const boxes = document.querySelectorAll('.box');
+
+// ES5
+/*
+var boxesArr5 = Array.prototype.slice.call(boxes);
+boxesArr5.forEach(function(cur) {
+  cur.style.backgroundColor = 'dodgerblue';
+});
+*/
+
+// ES6
+Array.from(boxes).forEach(cur => cur.style.backgroundColor = 'dodgerblue');
