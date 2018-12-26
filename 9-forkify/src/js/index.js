@@ -7,7 +7,6 @@ import * as recipeView from "./views/recipeView";
 import * as listView from "./views/listView";
 import * as likesView from "./views/likesView";
 import { elements, renderLoader, clearLoader } from "./views/base";
-import { stat } from "fs";
 
 /**
  * - Search object
